@@ -1,0 +1,24 @@
+<ly-toolbar position="static" bg="primary" [elevation]="3">
+  <button ly-button
+    [lyMenuTriggerFor]="menu"
+    [openOnHover]="true"
+  >Menu</button>
+  <h6 [lyTyp]="'title'" [withClass]="classes.grow">Roomies</h6>
+  <ng-template #menu let-T>
+    <ly-menu [ref]="T" [hasBackdrop]="false">
+      <button ly-button ly-menu-item >
+        <span>Thing 1</span>
+      </button>
+      <button ly-button ly-menu-item >
+        <span>Thing 2</span>
+      </button>
+      <button ly-button ly-menu-item >
+        <span>Thing 3</span>
+      </button>
+      <button ly-button ly-menu-item >
+        <span>Thing 4</span>
+      </button>
+    </ly-menu>
+  </ng-template>
+
+</ly-toolbar>

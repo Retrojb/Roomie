@@ -1,0 +1,39 @@
+<div style="border: black solid 2px;">
+  <ly-paper [lyP]="'1em'" [elevation]="2">
+    <h3>Dashboard</h3>
+    <ly-grid container [spacing]="16">
+      <ly-grid item [col]="6">
+        <ly-card [lyMaxWidth]="650">
+          <h2>House</h2>
+          <app-house-card></app-house-card>
+        </ly-card>
+      </ly-grid>
+      <ly-grid item [col]="6">
+        <ly-card [lyMaxWidth]="650">
+          <h2>Rooms</h2>
+          <app-room-card></app-room-card>
+        </ly-card>
+      </ly-grid>
+      <ly-grid item [col]="12">
+        <ly-card >
+          <h2>Chores</h2>
+          <app-chore-card></app-chore-card>
+        </ly-card>
+      </ly-grid>
+      <ly-grid container [spacing]="12">
+        <ly-grid item col="6">
+        <ly-card >
+          <h2>House Users</h2>
+          <ly-card-content>
+            <app-user-card></app-user-card>
+          </ly-card-content>
+          <ly-card-actions>
+            <button ly-button raised bg="primary">Add User</button>
+          </ly-card-actions>
+        </ly-card>
+      </ly-grid>
+      </ly-grid>
+    </ly-grid>
+
+  </ly-paper>
+</div>

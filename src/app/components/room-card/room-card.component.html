@@ -1,0 +1,32 @@
+<ly-card class="container">
+  <ly-grid container spacing="6">
+    <ly-grid item [col]="12">
+      <h3>Users_Name</h3>
+    </ly-grid>
+    <ly-avatar lySize="128" bg="primary" [elevation]="3">
+      <img alt="demo user avatar" src="../../../assets/fisheye astronaut HR WP.jpg">
+    </ly-avatar>
+    <ly-card-content>
+      <ly-grid container>
+        <ly-grid item col="12">
+          <p>User</p>
+        </ly-grid>
+        <ly-grid item col="12">
+          <p>Room Type</p>
+        </ly-grid>
+        <ly-grid item col="12">
+          <p>Chores</p>
+        </ly-grid>
+      </ly-grid>
+    </ly-card-content>
+    <ly-grid item [col]="12">
+
+      <ly-card-actions>
+        <button ly-button raised bg="accent">Edit</button>
+        <button ly-button raised bg="primary">Assign Chore</button>
+        <button ly-button raised bg="primary">Assign User</button>
+        <button ly-button raised bg="primary">Remove User</button>
+      </ly-card-actions>
+    </ly-grid>
+  </ly-grid>
+</ly-card>
